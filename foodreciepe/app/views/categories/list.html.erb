@@ -1,0 +1,5 @@
+<h1>Categories#list</h1>
+<% @categories.each do |catobj| %>
+    <li><%= link_to catobj.name, :controller => 'recipes', :action => 'list', :id => catobj.id %></li>
+<% end %>
+
